@@ -20,7 +20,7 @@ const EntriesList = (props) => {
 
   const handleDelete = async (id) => {
     try {
-      const response = await axios.delete(`http://localhost:5000/api/delete/${id}`);
+      const response = await axios.delete(`${process.env.REACT_APP_BASE_URL_PORT}/api/delete/${id}`);
       console.log('Entry deleted:', response.data);
     } catch (error) {
       console.error('Error deleting entry:', error);

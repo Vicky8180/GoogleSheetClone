@@ -18,7 +18,7 @@ const InputForm = ({ onSave, onClose }) => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/api/notes', formData);
+      const response = await axios.post(`${process.env.REACT_APP_BASE_URL_PORT}/api/notes`, formData);
       console.log('Data saved:', response.data);
       
       setTitle('');
