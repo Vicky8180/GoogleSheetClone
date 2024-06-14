@@ -1,0 +1,108 @@
+/* src/components/Left.css */
+.left {
+    background-color: #f0f0f0;
+    padding: 20px;
+
+    background-color: #fff;
+    color: #202124;
+    direction: ltr;
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    min-width: 360px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+  }
+  
+  .left ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .left li {
+    margin: 10px 0;
+  }
+  
+  .left button {
+    margin-left: 10px;
+  }
+  
+
+
+
+
+  /* LebelEdit */
+
+/* src/components/ColumnButtons.css */
+.column-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    height: 100vh;
+    gap: 10px; 
+  }
+  
+  .column-buttons button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+  }
+  
+  .column-buttons button:hover {
+    background-color: #e0e0e0;
+  }
+  .LevelEdit:hover {
+    background-color: #e0e0e0; 
+  }
+  
+  .LevelEdit.clicked {
+    background-color: #feefc3;
+  }
+  .button-icon {
+    width: 20px; 
+    height: 20px; 
+    margin-right: 10px; 
+  }
+  
+  .LevelEdit{
+    
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    -webkit-border-radius: 0 25px 25px 0;
+    border-radius: 0 25px 25px 0;
+    color: #202124;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    letter-spacing: .0178571429em;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    height: 48px;
+    min-width: 48px;
+    overflow: hidden;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+
+  .button-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
+
+  /*  */

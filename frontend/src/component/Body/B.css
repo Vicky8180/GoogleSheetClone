@@ -1,0 +1,44 @@
+/* 
+.Body {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    margin-top: 70px;
+  }
+  
+  .left-container {
+    min-width: 360px;
+    position: fixed;
+  }
+  
+  .right-container {
+    width: 80%;
+  }
+   */
+
+.Body {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+  margin-top: 70px;
+}
+
+.left-container {
+  min-width: 360px;
+  position: fixed;
+  top: 70px; /* Adjust based on the navbar height to avoid overlap */
+  left: 0;
+  /* height: calc(100vh - 70px);  */
+  overflow-y: auto; /* Optional: add scrolling if content overflows */
+  background-color: white; /* Optional: ensure it has a background */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.right-container {
+  margin-left: 360px; /* Ensure it does not overlap with the left-container */
+  width: calc(100% - 360px); /* Adjust width to account for the fixed left-container */
+  overflow-y: auto;
+
+  display: flex;
+   /* Allow the right container to scroll if content overflows */
+}
